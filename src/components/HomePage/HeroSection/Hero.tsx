@@ -4,7 +4,7 @@ import FloatingComments from './FloatingComments'
 
 const Hero = () => {
   return (
-    <div className="w-full pt-[230px] flex items-center justify-center">
+    <div className="w-full pt-[260px] flex items-center justify-center">
       <div className="w-fit h-fit relative">
         <H1Hero>
           Beyond <span className="text-[#4D3E99]">Insurance</span>
