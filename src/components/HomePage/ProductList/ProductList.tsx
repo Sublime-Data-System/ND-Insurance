@@ -8,7 +8,7 @@ const ProductList = () => {
   return (
     <div className="w-full h-auto mx-auto my-[120px]">
       <div className="h-[43px] w-[136px] border-[1.8px] border-[#A9BF6838] bg-[#F6FFDB] mx-auto font-[350] rounded-[40px] flex justify-center items-center">
-        <Paragraph className="text-[18px] leading-[150%] -tracking-[4%]">Products</Paragraph>
+        <Paragraph className="text-[18px] leading-[150%] -tracking-[0.72px]">Products</Paragraph>
       </div>
       <H2 className="text-center font-[700] my-[10px]"> Our Core Products</H2>
 

@@ -47,7 +47,8 @@
 
 /* Example fallback stack */
 body {
-  font-family: "Gotham", "Montserrat", "Poppins", sans-serif;
+  font-family: "Gotham", sans-serif;
+  overflow-x: hidden;
 }
 
 @theme inline {
