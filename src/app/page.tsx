@@ -2,6 +2,7 @@ import GridLayout from '@/components/HomePage/GridLayout/GridLayout'
 import Hero from '@/components/HomePage/HeroSection/Hero'
 import InsuranceBanner from '@/components/HomePage/InsuranceBanner/InsuranceBanner'
 import ProductList from '@/components/HomePage/ProductList/ProductList'
+import TestimonialsCarousel from '@/components/HomePage/TestimonialsCarousel/TestimonialsCarousel'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <ProductList />
       <GridLayout />
+      <TestimonialsCarousel />
       <InsuranceBanner />
     </div>
   )

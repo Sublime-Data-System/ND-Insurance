@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="w-screen  px-[72px] bg-gray-50 py-[20px]">
+      <body className="w-screen bg-gray-50 py-[20px]">
         <NavbarContainer />
         {children}
         <Footer />
