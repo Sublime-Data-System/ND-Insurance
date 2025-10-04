@@ -15,12 +15,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.6;
   transition: all 0.3s ease;
 }
 
 .testimonialsSwiper :global(.swiper-slide-active) {
-  opacity: 1;
   transform: scale(1);
   z-index: 10;
 }
@@ -55,4 +53,42 @@
 
 .testimonialsSwiper :global(.swiper-container) {
   overflow: visible;
+}
+
+.leftOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 80%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
+  /* backdrop-filter: blur(20px); */
+  z-index: 10;
+  pointer-events: none;
+}
+
+.rightOverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 80%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.8), transparent);
+  /* backdrop-filter: blur(20px); */
+  z-index: 10;
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .leftOverlay,
+  .rightOverlay {
+    width: 100px;
+  }
+}
+
+@media (max-width: 640px) {
+  .leftOverlay,
+  .rightOverlay {
+    width: 50px;
+  }
 }

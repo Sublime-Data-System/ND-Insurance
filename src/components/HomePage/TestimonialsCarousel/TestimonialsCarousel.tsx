@@ -108,8 +108,10 @@ export default function TestimonialsCarousel() {
           <h2 className="text-4xl font-bold text-gray-900 mb-8">Stories Of Security & Success</h2>
         </div>
 
-        {/* Carousel */}
-        <div className="relative mx-auto overflow-visible">
+        <div className="relative mx-auto overflow-hidden">
+          <div className={styles.leftOverlay}></div>
+          <div className={styles.rightOverlay}></div>
+
           <Swiper
             modules={[Pagination, Autoplay]}
             centeredSlides={true}
