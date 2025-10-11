@@ -90,7 +90,7 @@ const CompanyLogo = ({ logo }: { logo: string }) => {
     )
   }
   return (
-    <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mb-2 mx-auto">
+    <div className="w-12 h-12 bg-[#4D3E99] rounded-full flex items-center justify-center mb-2 mx-auto">
       <span className="text-white font-bold text-lg">{logo}</span>
     </div>
   )
@@ -98,14 +98,16 @@ const CompanyLogo = ({ logo }: { logo: string }) => {
 
 export default function TestimonialsCarousel() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16">
       <div className="mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <div className="inline-block bg-[#F6FFDB] text-[#161616] px-5 py-2 rounded-[40.31px] text-[18px] font-[350] mb-4 border-[1.79px] border-[#A9BF6838]">
             Our Clients
           </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">Stories Of Security & Success</h2>
+          <h2 className="text-[40px] font-bold text-[#2C2C2C] mb-8">
+            Stories Of Security & Success
+          </h2>
         </div>
 
         <div className="relative mx-auto overflow-hidden">
@@ -145,20 +147,22 @@ export default function TestimonialsCarousel() {
               <SwiperSlide key={testimonial.id}>
                 <div className={`${styles.testimonialCard} bg-white`}>
                   <StarRating rating={testimonial.rating} />
-                  <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4 md:mb-6 text-center">
+                  <p className="text-gray-700 text-sm md:text-base leading-relaxed text-center flex-grow">
                     {testimonial.text.split('... Read more')[0]}
-                    <span className="text-purple-600 cursor-pointer hover:underline">
+                    <span className="text-[#4D3E99] cursor-pointer hover:underline">
                       ... Read more
                     </span>
                   </p>
-                  <CompanyLogo logo={testimonial.logo} />
-                  <div className="text-center">
-                    <h4 className="font-semibold text-gray-900 text-base md:text-lg">
-                      {testimonial.name}
-                    </h4>
-                    <p className="text-purple-600 font-medium text-sm md:text-base">
-                      {testimonial.companyName}
-                    </p>
+                  <div className="mt-auto mb-4">
+                    <CompanyLogo logo={testimonial.logo} />
+                    <div className="text-center">
+                      <h4 className="font-semibold text-gray-900 text-base md:text-lg">
+                        {testimonial.name}
+                      </h4>
+                      <p className="text-[#4D3E99] font-medium text-sm md:text-base">
+                        {testimonial.companyName}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

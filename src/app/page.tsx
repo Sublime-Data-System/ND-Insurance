@@ -8,13 +8,13 @@ import TestimonialsCarousel from '@/components/HomePage/TestimonialsCarousel/Tes
 
 export default function Home() {
   return (
-    <div className="  bg-gray-50">
+    <div className="bg-[#ffffff]">
       <Hero />
       <ProductList />
       <GridLayout />
+      <TestimonialsCarousel />
       <ServicesSection />
       <IndustriesSection />
-      <TestimonialsCarousel />
       <InsuranceBanner />
     </div>
   )

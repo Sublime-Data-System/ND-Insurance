@@ -1,7 +1,8 @@
 .industriesSection {
   padding: 4rem 0;
-  background-color: #f8fafc;
   overflow: hidden;
+  max-width: 1225px;
+  margin: 0 auto;
 }
 
 .container {
@@ -15,13 +16,14 @@
 
 .badge {
   display: inline-block;
-  background-color: #dcfce7;
-  color: #166534;
+  background-color: #F6FFDB;
+  color: #161616;
   padding: 0.5rem 1rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
+  border-radius: 40.31px;
+  font-size: 1.125rem;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  border: 1.79px solid #A9BF6838
 }
 
 .title {
@@ -88,27 +90,27 @@
   gap: 0.75rem;
   padding: 1rem 1.5rem;
   background-color: white;
-  border-radius: 0.75rem;
+  border-radius: 35.32px;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
   white-space: nowrap;
   flex-shrink: 0;
   transition: all 0.3s ease;
   min-width: 200px;
+  border: 0.74px solid #0000002B;
 }
 
 .industryCard:nth-child(odd) {
-  background: linear-gradient(135deg, #a855f7, #c084fc);
-  color: white;
+  background: #ECE8FF;
+  color: #2C2C2C;
 }
 
 .industryCard:nth-child(even) {
-  background-color: white;
-  color: #1f2937;
+  background-color: #F8F8F8;
+  color: #2C2C2C;
 }
 
 .industryCard:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.15);
+  transform: scale(0.9);
 }
 
 .industryIcon {
@@ -170,7 +172,7 @@
   }
 
   .marqueeContent {
-    gap: 0.75rem;
+    gap: 12px;
   }
 }
 
