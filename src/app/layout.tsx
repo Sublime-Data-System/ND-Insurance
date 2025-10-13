@@ -15,10 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="w-screen  px-[72px] bg-gray-50 py-[20px]">
+      <body className="w-screen  bg-gray-50 overflow-x-hidden ">
         <NavbarContainer />
-        {children}
-        <Footer />
+        <div className="w-full px-[20px] py-[20px] sm:px-[72px]">
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   )
