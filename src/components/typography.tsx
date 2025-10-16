@@ -61,7 +61,7 @@ export const H7 = ({ children, className }: { children: ReactNode; className?: s
 
 export const Paragraph = ({ children, className }: { children: ReactNode; className?: string }) => {
   return (
-    <p className={cn('text-[18px] leading-[150%] -tracking-[0.54px] font-[350]', className)}>
+    <p className={cn('text-[18px] leading-[150%] -tracking-[0.54px] font-[400]', className)}>
       {children}
     </p>
   )
