@@ -6,19 +6,23 @@ import { Switch } from '@/components/ui/switch'
 
 const ProductList = () => {
   return (
-    <div className="w-full h-auto mx-auto my-[120px]">
-      <div className="h-[43px] w-[136px] border-[1.8px] border-[#A9BF6838] bg-[#F6FFDB] mx-auto font-[350] rounded-[40px] flex justify-center items-center">
-        <Paragraph className="text-[18px] leading-[150%] -tracking-[0.72px]">Products</Paragraph>
+    <div className="w-full h-auto mx-auto my-[80px] sm:my-[120px]">
+      <div className="h-[32px] sm:h-[43px] w-[107px] sm:w-[136px] border-[1.8px] border-[#A9BF6838] bg-[#F6FFDB] mx-auto font-[350] rounded-[40px] flex justify-center items-center">
+        <Paragraph className="leading-[100%] -tracking-[0.72px] pt-1">Products</Paragraph>
       </div>
       <H2 className="text-center font-[700] my-[10px]"> Our Core Products</H2>
 
-      <div className="w-fit h-fit mx-auto my-[50px] flex items-center gap-[16px]">
-        <H6 className="w-[112px]">Corporate Solution</H6>
-        <Switch className="w-[163px] h-[68px]" />
-        <H6 className="w-[132px]">Personal Solution</H6>
+      <div className="w-fit h-fit mx-auto my-[50px] flex items-center gap-[10px] md:gap-[16px]">
+        <H6 className="w-[76px] md:w-[112px]">
+          <i>Corporate Solution</i>
+        </H6>
+        <Switch className="h-[50px] w-[120px] md:w-[163px] md:h-[68px]" />
+        <H6 className="w-[65px] md:w-[132px]">
+          <i>Personal Solution</i>
+        </H6>
       </div>
 
-      <div className="w-full h-auto flex justify-center gap-[16px] pt-[10px]">
+      <div className="w-full h-auto flex flex-col lg:flex-row items-center justify-center gap-[16px] pt-[10px]">
         <ProductCard>
           <Image
             src={'/images/building.png'}
