@@ -70,7 +70,7 @@ export const H7 = ({ children, className }: { children: ReactNode; className?: s
   return (
     <h6
       className={cn(
-        'text-[18px] sm:text-[21px] leading-[150%] -tracking-[0.84px] font-[350]',
+        'text-[18px] sm:text-[21px] leading-[150%] -tracking-[0.84px] font-[400]',
         className,
       )}
     >
@@ -83,7 +83,7 @@ export const Paragraph = ({ children, className }: { children: ReactNode; classN
   return (
     <p
       className={cn(
-        'text-[14px] sm:text-[18px] leading-[150%] -tracking-[0.54px] font-[350]',
+        'text-[14px] sm:text-[18px] leading-[150%] -tracking-[0.54px] font-[400]',
         className,
       )}
     >

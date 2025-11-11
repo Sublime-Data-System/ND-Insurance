@@ -17,9 +17,11 @@ export default function RootLayout({
     <html lang="en">
       <body className="w-screen  bg-gray-50 overflow-x-hidden ">
         <NavbarContainer />
-        <div className="w-full px-[20px] py-[20px] sm:px-[72px]">
+        <div className="w-full">
           {children}
-          <Footer />
+          <div className="h-auto w-full px-4 md:px-10">
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

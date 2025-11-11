@@ -3,7 +3,7 @@ import { Paragraph } from '../typography'
 
 const FooterBase = () => {
   return (
-    <div className="flex max-md:flex-col justify-between gap-[20px] ">
+    <div className="flex max-lg:flex-col justify-between gap-[20px] md:gap-8 lg:gap-[20px] ">
       <div className="w-full md:w-[470px]">
         <Paragraph className="text-[#858585] text-[16px] sm:text-[18px]">
           IRDA Registration number: 967
@@ -15,7 +15,7 @@ const FooterBase = () => {
           CIN No : U67100GJ2022PTC135149
         </Paragraph>
       </div>
-      <Paragraph className="text-[#858585] md:self-end text-[16px] md:text-[18px]">
+      <Paragraph className="text-[#858585] lg:self-end text-[16px] md:text-[18px]">
         @ 2025 ND Insurance All rights reserved. 
       </Paragraph>
     </div>
