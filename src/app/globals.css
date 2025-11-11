@@ -3,6 +3,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme{
+  --breakpoint-xs: 360px;
+  --breakpoint-xl: 73.75rem;
+}
+
 @font-face {
   font-family: "Gotham";
   src: url("/font/GOTHAM-BOLD.TTF") format("truetype");

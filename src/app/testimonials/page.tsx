@@ -3,7 +3,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className="mt-40 w-full ">
+    <div className="mt-16 sm:mt-28 lg:mt-40 w-full  ">
       <Testimonials />
     </div>
   )

@@ -31,7 +31,7 @@ const ServiceCardLeft = ({
       </div>
       <div className="w-64 xl:w-52 xl:mt-7">
         <i>
-          <H2 className="max-xl:text-[26px] xl:text-[36px]">{title}</H2>
+          <H2 className="max-xl:text-[26px]! xl:text-[36px]!">{title}</H2>
         </i>
       </div>
     </div>

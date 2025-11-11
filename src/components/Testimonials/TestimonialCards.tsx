@@ -1,5 +1,5 @@
 import React from 'react'
-import { Paragraph } from '../typography'
+import { H1Grey, H5, Paragraph } from '../typography'
 import Image from 'next/image'
 import TestimonialRating from './TestimonialRating'
 
@@ -10,7 +10,21 @@ const TestimonialCards = () => {
         className="w-full p-6 lg:p-8 bg-white border-2 border-[#E9E5FF] flex max-md:flex-col gap-6 items-stretch rounded-3xl"
         style={{ boxShadow: '0px 4.03px 41px 5.04px #00000008' }}
       >
-        <div className="w-full md:w-[248px] max-md:h-[183px] lg:w-80 bg-[#F6FFDB] rounded-[21px] lg:rounded-[42px] max-md:order-2"></div>
+        <div className="w-full md:w-[248px] max-md:h-[183px] lg:w-80 bg-[#F6FFDB] rounded-[21px] lg:rounded-[42px] max-md:order-2 max-md:px-2.5 p-5 lg:p-7 flex flex-col justify-between">
+          <div className="h-[55px]">
+            <H1Grey className="text-[128px] leading-[100%]!  text-[#ADBC82] flex">“</H1Grey>
+          </div>
+          <div className="w-full h-auto flex gap-2.5 md:gap-5 items-center">
+            <div className="w-[42px] h-[40px] rounded-full border-2 border-[#D9D9D9] relative">
+              <Image src={'/images/user/user1.png'} alt={''} fill />
+            </div>
+            <div>
+              <H5 className="text-[18px]!">Ashish Shah</H5>
+              <H5 className="text-[14px]! text-[#4D3E99]">President - Finance</H5>
+              <Paragraph className="text-[14px]! text-[#4D3E99]">Kosol Energie Pvt. Ltd</Paragraph>
+            </div>
+          </div>
+        </div>
         <div className="flex-1 max-md:order-1">
           <div className="flex justify-between items-center mb-7">
             <Image
@@ -48,7 +62,15 @@ const TestimonialCards = () => {
                 alt="MM Group"
                 height={58}
                 width={196}
-                className="h-[50px]  md:h-[58px]"
+                className="h-[58px] max-md:hidden"
+              />
+
+              <Image
+                src="/logo/mm.png"
+                alt="MM Group"
+                height={50}
+                width={169}
+                className="h-[50px] md:hidden"
               />
 
               <TestimonialRating />
@@ -62,7 +84,20 @@ const TestimonialCards = () => {
             </Paragraph>
           </div>
 
-          <div className="w-full md:w-[248px] lg:w-full max-md:h-[168px] lg:h-40 rounded-3xl bg-[#F5F5F5] max-md:order-2 max-lg:order-1"></div>
+          <div className="w-full md:w-[248px] lg:w-full max-md:h-[168px] lg:h-40 rounded-3xl bg-[#F5F5F5] max-md:order-2 max-lg:order-1 flex flex-col justify-between max-md:px-3 py-3 px-5 ">
+            <div className="h-[55px]">
+              <H1Grey className="text-[128px] leading-[100%]!  text-[#464746] flex">“</H1Grey>
+            </div>
+            <div className="w-full h-auto flex gap-2.5 md:gap-5 items-center">
+              <div className="w-[42px] h-[40px] rounded-full border-2 border-[#D9D9D9] relative">
+                <Image src={'/images/user/user4.png'} alt={''} fill />
+              </div>
+              <div>
+                <H5 className="text-[18px]!">Jaydip Patel</H5>
+                <Paragraph className="text-[14px]! text-[#4D3E99]">M M Yarns Pvt. Ltd.</Paragraph>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div
@@ -91,7 +126,21 @@ const TestimonialCards = () => {
             </Paragraph>
           </div>
 
-          <div className="w-full md:w-[248px] lg:w-full max-md:h-[183px] lg:h-48 rounded-3xl bg-[#E9E5FF] max-md:order-2 max-lg:order-1"></div>
+          <div className="w-full md:w-[248px] lg:w-full max-md:h-[183px] lg:h-48 rounded-3xl bg-[#E9E5FF] max-md:order-2 max-lg:order-1 max-md:px-3  p-5 flex flex-col justify-between">
+            <div className="h-[55px]">
+              <H1Grey className="text-[128px] leading-[100%]!  text-[#464746] flex">“</H1Grey>
+            </div>
+            <div className="w-full h-auto flex gap-2.5 md:gap-5 items-center">
+              <div className="w-[42px] h-[40px] rounded-full border-2 border-[#D9D9D9] relative">
+                <Image src={'/images/user/user4.png'} alt={''} fill />
+              </div>
+              <div>
+                <H5 className="text-[18px]!">Nihar Patel</H5>
+                <H5 className="text-[14px]! text-[#4D3E99]">Director</H5>
+                <Paragraph className="text-[14px]! text-[#4D3E99]">R. K. Synthesis Ltd</Paragraph>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -99,7 +148,22 @@ const TestimonialCards = () => {
         className="w-full p-6 lg:p-8 bg-white border-2 border-[#E9E5FF] flex max-md:flex-col gap-6 items-stretch rounded-3xl"
         style={{ boxShadow: '0px 4.03px 41px 5.04px #00000008' }}
       >
-        <div className="w-full md:w-[248px] max-md:h-[183px] lg:w-80 bg-[#F6FFDB] rounded-[21px] lg:rounded-[42px] max-md:order-2"></div>
+        <div className="w-full md:w-[248px] max-md:h-[183px] lg:w-80 bg-[#F6FFDB] rounded-[21px] lg:rounded-[42px] max-md:order-2 flex flex-col justify-between max-md:px-3 p-5 lg:p-7">
+          <div className="h-[55px]">
+            <H1Grey className="text-[128px] leading-[100%]!  text-[#ADBC82] flex">“</H1Grey>
+          </div>
+          <div className="w-full h-auto flex gap-2.5 md:gap-5 items-center">
+            <div className="w-[42px] h-[40px] rounded-full border-2 border-[#D9D9D9] relative">
+              <Image src={'/images/user/user2.png'} alt={''} fill />
+            </div>
+            <div>
+              <H5 className="text-[18px]!">Khushi Gupta </H5>
+              <Paragraph className="text-[14px]! text-[#4D3E99]">
+                GTC Oilfield Services Ltd.
+              </Paragraph>
+            </div>
+          </div>
+        </div>
         <div className="flex-1 max-md:order-1">
           <div className="flex justify-between mb-7 items-center">
             <Image
