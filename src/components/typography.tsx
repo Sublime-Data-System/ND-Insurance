@@ -5,7 +5,7 @@ export const H1Hero = ({ children, className }: { children: ReactNode; className
   return (
     <h1
       className={cn(
-        'text-[26px] sm:text-[40px] md:text-[55px] leading-[121%] -tracking-[1px] md:-tracking-[2px] font-[700] text-center',
+        'text-[26px] sm:text-[40px] lg:text-[55px] leading-[121%] -tracking-[1px] md:-tracking-[2px] font-[700] text-center',
         className,
       )}
     >
@@ -86,6 +86,7 @@ export const Paragraph = ({ children, className }: { children: ReactNode; classN
         'text-[14px] sm:text-[18px] leading-[150%] -tracking-[0.54px] font-[400]',
         className,
       )}
+      style={{ whiteSpace: 'pre-line' }}
     >
       {children}
     </p>

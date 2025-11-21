@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Footer from '@/components/Footer/Footer'
 import NavbarContainer from '@/components/Navbar/NavbarContainer'
+import Head from 'next/head'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,6 +18,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="w-screen  bg-gray-50 overflow-x-hidden ">
+        <Script id="zoho-init" strategy="afterInteractive">
+          {`
+            window.$zoho = window.$zoho || {};
+            $zoho.salesiq = $zoho.salesiq || { ready: function() {} };
+          `}
+        </Script>
+
+        <Script
+          id="zoho-widget"
+          src="https://salesiq.zohopublic.in/widget?wc=siq27fce36886192331f12fd52f5506f26c24326765e2c497703c8af91ba884fa2722377392681257b98e21d0cefdeb7fc2"
+          strategy="afterInteractive"
+        />
         <NavbarContainer />
         <div className="w-full">
           {children}

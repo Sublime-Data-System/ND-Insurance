@@ -17,7 +17,7 @@ const Testimonials = () => {
           </i>
         </Paragraph>
 
-        <button className="w-[220px] sm:w-[196px] h-[56px] sm:h-[65px] rounded-[45px] bg-[#4D3E99] text-white mt-5">
+        <button className="w-[220px] sm:w-[196px] h-[56px] sm:h-[65px] rounded-[45px] bg-[#4D3E99] hover:bg-[#2F2F2F] text-white mt-5">
           <H7>Get in touch</H7>
         </button>
 
