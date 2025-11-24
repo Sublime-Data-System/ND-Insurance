@@ -4,7 +4,7 @@ import React from 'react'
 const Banner = () => {
   return (
     <div className="flex max-md:flex-col max-md:items-center md:justify-center gap-7 px-2">
-      <div className="w-[330px] lg:w-[657px] h-[477px] lg:h-[310px] rounded-[35px] bg-[#F8F8F8] p-10 relative">
+      <div className="w-[330px] lg:w-[657px] h-[477px] lg:h-[310px] rounded-[35px] bg-[#f4f2f2] p-10 relative">
         <h4 className="text-[26px] lg:text-[32px] text-[#2C2C2C] leading-[121%] -tracking-[0.96px] font-bold w-[234px] lg:w-[356px]">
           <i>End-to-End Insurance & Claims Support</i>
         </h4>

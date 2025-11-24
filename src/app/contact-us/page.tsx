@@ -5,7 +5,7 @@ import React, { ReactElement, useState } from 'react'
 
 const page = () => {
   return (
-    <div className="min-h-screen bg-gray-50 max-md:pt-10 px-0 p-4 sm:p-8 md:p-12 font-inter flex items-center justify-center">
+    <div className="min-h-screen bg-gray-50 pb-0! max-md:pt-10 px-0 p-4 sm:p-8 md:p-12 font-inter flex items-center justify-center">
       <div
         className="w-full max-w-[330px] md:max-w-[716px] xxl:max-w-7xl min-h-[725px] bg-white rounded-[25px] border-[#E9E5FF] border-[2px] p-4 md:p-6"
         style={{ boxShadow: '0px 4.03px 41px 5.04px #00000008' }}

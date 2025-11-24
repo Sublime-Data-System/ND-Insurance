@@ -20,7 +20,7 @@ const Footer = () => {
     },
   ]
   return (
-    <div className="max-w-[329px] md:max-w-[713px] lg:max-w-[1296px] w-full h-fit xl:h-[584px] flex flex-col rounded-[21px] md:rounded-[52px] bg-white mx-auto px-[15px] py-[40px] xs:p-[30px] md:p-[40px] lg:p-[60px] my-[80px] ">
+    <div className="max-w-[329px] md:max-w-[713px] lg:max-w-[1296px] w-full h-fit xl:h-[584px] flex flex-col rounded-[21px] md:rounded-[52px] bg-white mx-auto px-[15px] py-[40px] xs:p-[30px] md:p-[40px] lg:p-[60px] mt-[40px]! my-[80px] ">
       <div className="flex flex-wrap flex-1 pb-[50px] justify-between">
         <div className="w-[250px] md:w-[300px]">
           <Image

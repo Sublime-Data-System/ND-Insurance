@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { H7, Paragraph } from '../typography'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
+import { Cross, TextAlignJustify, X } from 'lucide-react'
 
 const Navbar = () => {
   const [visible, setVisible] = useState(true)
@@ -47,11 +48,7 @@ const Navbar = () => {
         <div className="h-[66px] flex items-center justify-between ">
           <Image alt={'logo'} src={'/logo/navLogo.png'} height={46} width={104} />
           {menuVisible ? (
-            <Image
-              alt={'cross'}
-              src={'/svg/cross.svg'}
-              width={20}
-              height={20}
+            <X
               onClick={() =>
                 setMenuVisible((prev) => {
                   return !prev
@@ -59,11 +56,7 @@ const Navbar = () => {
               }
             />
           ) : (
-            <Image
-              alt={'hamburger'}
-              src={'/svg/hamburger.svg'}
-              width={30}
-              height={16}
+            <TextAlignJustify
               onClick={() =>
                 setMenuVisible((prev) => {
                   return !prev

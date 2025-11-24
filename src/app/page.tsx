@@ -1,5 +1,6 @@
 import Hero from '@/components/HomePage/HeroSection/Hero'
 import InsuranceBanner from '@/components/HomePage/InsuranceBanner/InsuranceBanner'
+import WhyUs from '@/components/HomePage/WhyUs/WhyUs'
 import Products from '@/components/Products/Products'
 import { insuranceData, personalInsuranceData } from '@/components/utils'
 import Link from 'next/link'
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <div className="  bg-gray-50">
       <Hero />
+      <WhyUs />
       <div className="mt-20">
         <Products
           insuranceData={insuranceData.slice(0, 3)}

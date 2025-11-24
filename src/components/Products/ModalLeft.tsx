@@ -19,7 +19,7 @@ const ModalLeft = ({
       <Paragraph className="text-[27px]! text-[#41357B] mt-3 leading-[121%] -tracking-[0.81px]">
         {title}
       </Paragraph>
-      <div className="w-full mt-3 flex flex-wrap gap-2">
+      <div className="w-full mt-3 flex flex-wrap gap-2 max-lg:hidden">
         {tags?.map((data, index) => {
           return (
             <div
