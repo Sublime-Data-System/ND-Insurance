@@ -1,32 +1,33 @@
 import React from 'react'
 import { Paragraph } from '../typography'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const FooterRight = () => {
   const pages = [
     {
       title: 'Home',
-      link: '#',
+      link: '/',
     },
     {
       title: 'About us',
-      link: '#',
+      link: '/about-us',
     },
     {
       title: 'Contact Us',
-      link: '#',
+      link: '/contact-us',
     },
     {
       title: 'Our Services',
-      link: '#',
+      link: '/our-services',
     },
     {
       title: 'Our Products',
-      link: '#',
+      link: '/our-products',
     },
     {
       title: 'Testimonials',
-      link: '#',
+      link: '/testimonials',
     },
   ]
 
@@ -108,12 +109,11 @@ const FooterRight = () => {
         <div className=" flex flex-col flex-wrap gap-[16px] h-[130px]  lg:h-fit ">
           {pages.map((data, index) => {
             return (
-              <Paragraph
-                className="text-[#858585] text-[18px] sm:text-[20px] w-fit md:w-[200px] lg:w-fit"
-                key={data.title + index}
-              >
-                {data.title}
-              </Paragraph>
+              <Link href={data.link} key={data.title + index}>
+                <Paragraph className="text-[#858585] text-[18px] sm:text-[20px] w-fit md:w-[200px] lg:w-fit hover:text-black cursor-pointer">
+                  {data.title}
+                </Paragraph>
+              </Link>
             )
           })}
         </div>

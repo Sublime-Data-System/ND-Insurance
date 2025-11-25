@@ -3,6 +3,8 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { H7, Paragraph } from '../typography'
 import { cn } from '@/lib/utils'
+import Link from 'next/link'
+import { Cross, TextAlignJustify, X } from 'lucide-react'
 
 const Navbar = () => {
   const [visible, setVisible] = useState(true)
@@ -24,11 +26,11 @@ const Navbar = () => {
   }, [lastScrollY])
 
   const links = [
-    { text: 'About us', link: '' },
-    { text: 'Our Services', link: '' },
-    { text: 'Our Products', link: '' },
-    { text: 'Testimonials', link: '' },
-    { text: 'Contact us', link: '' },
+    { text: 'About us', link: '/about-us' },
+    { text: 'Our Services', link: '/our-services' },
+    { text: 'Our Products', link: '/our-products' },
+    { text: 'Testimonials', link: '/testimonials' },
+    { text: 'Contact us', link: '/contact-us' },
   ]
 
   return (
@@ -46,11 +48,7 @@ const Navbar = () => {
         <div className="h-[66px] flex items-center justify-between ">
           <Image alt={'logo'} src={'/logo/navLogo.png'} height={46} width={104} />
           {menuVisible ? (
-            <Image
-              alt={'cross'}
-              src={'/svg/cross.svg'}
-              width={20}
-              height={20}
+            <X
               onClick={() =>
                 setMenuVisible((prev) => {
                   return !prev
@@ -58,11 +56,7 @@ const Navbar = () => {
               }
             />
           ) : (
-            <Image
-              alt={'hamburger'}
-              src={'/svg/hamburger.svg'}
-              width={30}
-              height={16}
+            <TextAlignJustify
               onClick={() =>
                 setMenuVisible((prev) => {
                   return !prev
@@ -76,12 +70,9 @@ const Navbar = () => {
             <Paragraph className="!text-[24px] -tracking-[0.84px]">Home</Paragraph>
             {links.map((data, index) => {
               return (
-                <Paragraph
-                  className="!text-[24px] -tracking-[0.84px]"
-                  key={data.link + index + '-sm'}
-                >
-                  {data.text}
-                </Paragraph>
+                <Link href={data.link} className="cursor-pointer" key={data.link + index + '-sm'}>
+                  <Paragraph className="!text-[24px] -tracking-[0.84px]">{data.text}</Paragraph>
+                </Link>
               )
             })}
 
@@ -101,15 +92,19 @@ const Navbar = () => {
           style={{ boxShadow: '0px 3.71px 51.6px -42px #0000000A', border: '3px solid #0000000A' }}
         >
           <div className="h-full w-auto flex items-center pl-[20px]">
-            <Image alt={'logo'} src={'/logo/navLogo.png'} height={57} width={128} />
+            <Link href={'/'}>
+              <Image alt={'logo'} src={'/logo/navLogo.png'} height={57} width={128} />
+            </Link>
           </div>
           <div className="h-full w-auto flex items-center gap-[30px] pr-[16px]">
             {links.map((data, index) => (
-              <Paragraph className="text-[#292929] -tracking-[0.84px]" key={data.text + index}>
-                {data.text}
-              </Paragraph>
+              <Link href={data.link} className="cursor-pointer" key={data.text + index}>
+                <Paragraph className="text-[#292929] -tracking-[0.84px] hover:text-[#a0c041]">
+                  {data.text}
+                </Paragraph>
+              </Link>
             ))}
-            <button className="h-[50px] w-[50px] xl:h-[59px] xl:w-[164px] rounded-[45px] bg-[#2F2F2F] flex items-center justify-center">
+            <button className="h-[50px] w-[50px] xl:h-[59px] xl:w-[164px] hover:bg-[#4D3E99] rounded-[45px] bg-[#2F2F2F] flex items-center justify-center">
               <H7 className="text-white max-xl:hidden">Get a Quote</H7>
               <Image
                 className="max-lg:hidden xl:hidden"

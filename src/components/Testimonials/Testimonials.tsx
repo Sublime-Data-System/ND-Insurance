@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Testimonials = () => {
   return (
-    <div className="w-full">
+    <div className="w-full mb-[80px]">
       <div className="flex flex-col items-center relative w-[300px] sm:w-[650px] mx-auto h-[280px] lg:h-[400px] gap-5 sm:gap-3">
         <H1Hero className=" md:text-[40px]! lg:text-[55px]! p-2.5">
           Hear From <span className="text-[#4D3E99]">Our Clients</span>
@@ -17,7 +17,7 @@ const Testimonials = () => {
           </i>
         </Paragraph>
 
-        <button className="w-[220px] sm:w-[196px] h-[56px] sm:h-[65px] rounded-[45px] bg-[#4D3E99] text-white mt-5">
+        <button className="w-[220px] sm:w-[196px] h-[56px] sm:h-[65px] rounded-[45px] bg-[#4D3E99] hover:bg-[#2F2F2F] text-white mt-5">
           <H7>Get in touch</H7>
         </button>
 
