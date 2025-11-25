@@ -20,7 +20,7 @@ const Footer = () => {
     },
   ]
   return (
-    <div className="max-w-[329px] md:max-w-[713px] lg:max-w-[1296px] w-full h-fit xl:h-[584px] flex flex-col rounded-[21px] md:rounded-[52px] bg-white mx-auto px-[15px] py-[40px] xs:p-[30px] md:p-[40px] lg:p-[60px] my-[80px] ">
+    <div className="max-w-[329px] md:max-w-[713px] lg:max-w-[1296px] w-full h-fit xl:h-[584px] flex flex-col rounded-[21px] md:rounded-[52px] bg-white mx-auto px-[15px] py-[40px] xs:p-[30px] md:p-[40px] lg:p-[60px] mt-[40px]! my-[80px] ">
       <div className="flex flex-wrap flex-1 pb-[50px] justify-between">
         <div className="w-[250px] md:w-[300px]">
           <Image
@@ -30,11 +30,11 @@ const Footer = () => {
             width={221}
             alt={'logo'}
           />
-          <Paragraph className="text-[16px] sm:text-[18px] w-[300px]  !leading-[30px]  text-[#4D3E99] font-[400] mt-[10px] uppercase">
+          <Paragraph className="text-[16px] sm:text-[18px] w-[225px] sm:w-[300px]  !leading-[30px]  text-[#4D3E99] font-[400] mt-[10px] uppercase">
             <i>Protecting Your Growth, Securing Your Future !</i>
           </Paragraph>
 
-          <button className="w-[177px] h-[56px] sm:h-[65px] bg-[#2D2D2D] rounded-[45px] mt-[30px]">
+          <button className="w-[177px] h-[56px] sm:h-[65px] bg-[#2D2D2D] rounded-[45px] mt-[30px] hover:bg-[#4D3E99]">
             <Paragraph className="text-[18px] sm:text-[21px] font-[350] text-white">
               Get a Quote
             </Paragraph>

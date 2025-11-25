@@ -2,6 +2,7 @@ import { H1Hero, H5, H7 } from '@/components/typography'
 import React from 'react'
 import FloatingComments from './FloatingComments'
 import ReviewsSmall from './ReviewsSmall'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -22,13 +23,17 @@ const Hero = () => {
           services. 
         </H5>
         {/* buttons */}
-        <div className="flex max-sm:flex-col max-sm:items-center gap-[18px] justify-center my-[40px]">
-          <button className="h-[56px] sm:h-[65px] w-[220px] sm:w-[181px] rounded-[45px] flex items-center justify-center bg-[#E4F8AA] border-[2px] border-[#A9BF68B0]">
-            <H7 className="text-[#2A2A2A]">Our Services</H7>
-          </button>
-          <button className="h-[56px] sm:h-[65px] w-[220px] sm:w-[181px] rounded-[45px] flex items-center justify-center bg-[#4D3E99] ">
-            <H7 className="text-[#fff]">Get in touch</H7>
-          </button>
+        <div className="flex max-sm:flex-col max-sm:items-center gap-[18px]  justify-center my-[40px]">
+          <Link href={'/our-services'}>
+            <button className="h-[56px] sm:h-[65px] w-[220px] sm:w-[181px] rounded-[45px] hover:bg-[#E9E5FF] hover:border-[#4D3E9969]  flex items-center justify-center bg-[#E4F8AA] border-[2px] border-[#A9BF68B0]">
+              <H7 className="text-[#2A2A2A]">Our Services</H7>
+            </button>
+          </Link>
+          <Link href={'/contact-us'}>
+            <button className="h-[56px] sm:h-[65px] w-[220px] sm:w-[181px] rounded-[45px] hover:bg-[#2F2F2F] flex items-center justify-center bg-[#4D3E99] ">
+              <H7 className="text-[#fff]">Get in touch</H7>
+            </button>
+          </Link>
         </div>
         <FloatingComments
           color="#E4F8AA"

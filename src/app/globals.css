@@ -6,6 +6,8 @@
 @theme{
   --breakpoint-xs: 360px;
   --breakpoint-xl: 73.75rem;
+  --breakpoint-xxl: 80rem;
+
 }
 
 @font-face {
@@ -25,7 +27,7 @@
 @font-face {
   font-family: "Gotham";
   src: url("/font/Gotham-Light.otf") format("opentype");
-  font-weight: 350;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -52,7 +54,7 @@
 
 /* Example fallback stack */
 body {
-  font-family: "Gotham", sans-serif;
+  font-family: "Gotham";
   overflow-x: hidden;
 }
 
@@ -170,4 +172,8 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+#radix-_R_4lritmlb_ > button[data-slot="dialog-close"] {
+  display: none !important;
 }

@@ -23,7 +23,7 @@ const ServiceBanner = () => {
           Expertly crafted plans and advisory support so you’re covered in every situation.
         </Paragraph>
 
-        <button className="h-[56px] sm:h-[65px] w-[159px] sm:w-[173px] rounded-[45px] bg-[#F6FFDB]">
+        <button className="h-[56px] sm:h-[65px] w-[159px] sm:w-[173px] rounded-[45px] bg-[#F6FFDB] hover:bg-[#E9E5FF]">
           <H7 className="text-[#5C6446] font-[400] max-sm:text-[18px]! text-[21px]!">Contact Us</H7>
         </button>
       </div>
@@ -62,7 +62,7 @@ const ServiceBanner = () => {
               </div>
             </div>
 
-            <button className="h-[54px] sm:h-[65px] w-full rounded-[44.6px] bg-[#2F2F2F]">
+            <button className="h-[54px] sm:h-[65px] w-full rounded-[44.6px] bg-[#2F2F2F] hover:bg-[#4D3E99]">
               <H7 className="text-white text-[17.5px] sm:text-[21px]">Get a Quote</H7>
             </button>
           </div>

@@ -93,7 +93,7 @@ const OurServices = () => {
 
   return (
     <>
-    <ServicesHero/>
+      <ServicesHero />
       <div className="w-full max-xl:hidden">
         {serviceData.map((data, index) => (
           <ServicesCardXL key={index} isOdd={index % 2 != 0} serviceData={data} />
@@ -106,7 +106,7 @@ const OurServices = () => {
         ))}
       </div>
 
-      <div className="w-full h-auto px-5">
+      <div className="w-full h-auto px-5 my-[80px]">
         <ServiceBanner />
       </div>
     </>

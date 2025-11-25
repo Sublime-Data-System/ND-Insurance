@@ -1,6 +1,7 @@
 import React from 'react'
 import { H2, H5, H7, Paragraph } from '../../typography'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const InsuranceBanner = () => {
   return (
@@ -27,13 +28,15 @@ const InsuranceBanner = () => {
           you can trust.
         </Paragraph>
 
-        <button className="w-[159px] md:w-[173px] h-[56px] md:h-[65px] rounded-[45px] bg-[#F6FFDB] flex justify-center items-center gap-[10px]">
-          <Image src={'/svg/phone.svg'} alt={'phone svg'} height={19} width={19} />
-          <H7 className="text-[#5C6446]">{'Lets Talk'}</H7>
-        </button>
+        <Link href={'tel:+91 9274415148'}>
+          <button className="w-[159px] md:w-[173px] h-[56px] md:h-[65px]  rounded-[45px] bg-[#F6FFDB] hover:bg-[#E9E5FF] flex justify-center items-center gap-[10px]">
+            <Image src={'/svg/phone.svg'} alt={'phone svg'} height={19} width={19} />
+            <H7 className="text-[#5C6446]">{'Lets Talk'}</H7>
+          </button>
+        </Link>
       </div>
       <div className="max-w-[266px] md:max-w-full xl:max-w-[380px] w-full h-full max-xl:mt-[40px] ">
-        <div className="h-[316px] md:h-[326px] w-full md:max-w-full xl:max-w-[380px] border-[6px] border-[#E9E9E9] rounded-[22px] bg-white relative">
+        <div className="h-[316px] md:h-[326px]  w-full md:max-w-full xl:max-w-[380px] border-[6px] border-[#E9E9E9] rounded-[22px] bg-white relative">
           <div className="px-[15px] md:px-[30px] pt-[30px] w-full">
             <H5 className="w-full text-[20px] md:text-[30px] xl:text-[24px]">
               <i>
@@ -45,7 +48,7 @@ const InsuranceBanner = () => {
 
             <button
               className={
-                'w-[142px] md:w-[177px] h-[56px] md:h-[65px] rounded-[45px] bg-[#2D2D2D] mt-[20px]'
+                'w-[142px] md:w-[177px] h-[56px] md:h-[65px] rounded-[45px] bg-[#2D2D2D] mt-[20px] hover:bg-[#4D3E99]'
               }
             >
               <H7 className="text-white">Get a Quote</H7>

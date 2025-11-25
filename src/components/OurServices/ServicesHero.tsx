@@ -13,7 +13,7 @@ const ServicesHero = () => {
         Insurance made simple, tailored to your unique needs and goals
       </Paragraph>
       <div className="w-full flex justify-center max-sm:mt-24">
-        <button className="w-[220px] sm:w-[196px] h-[56px] sm:h-[65px] rounded-[45px] bg-[#4D3E99] mx-auto">
+        <button className="w-[220px] sm:w-[196px] h-[56px] sm:h-[65px] rounded-[45px] bg-[#4D3E99] hover:bg-[#2F2F2F] mx-auto">
           <H7 className="text-white">Get in touch</H7>
         </button>
       </div>
