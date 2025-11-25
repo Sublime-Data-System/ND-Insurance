@@ -15,10 +15,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-[#ffffff] py-[20px]">
+      <body className="w-screen  bg-gray-50 overflow-x-hidden ">
         <NavbarContainer />
-        {children}
-        <Footer />
+        <div className="w-full">
+          {children}
+          <div className="h-auto w-full px-4 md:px-10">
+            <Footer />
+          </div>
+        </div>
       </body>
     </html>
   )
