@@ -2,7 +2,6 @@ import InsuranceBanner from '@/components/HomePage/InsuranceBanner/InsuranceBann
 import OurProductsTitle from '@/components/Products/OurProductsTitle'
 import Products from '@/components/Products/Products'
 import { insuranceData, personalInsuranceData } from '@/components/utils'
-import Image from 'next/image'
 import React from 'react'
 
 const page = () => {

@@ -126,7 +126,7 @@ export default function ServicesSection() {
                 {servicesData.map((service, index) => (
                   <button
                     key={service.id}
-                    className={`${styles.serviceTab} ${index === activeTab ? styles.activeTab : ''}`}
+                    className={`${styles.serviceTab} ${index === activeTab ? styles.activeTab : ''} text-[22px]! -tracking-[0.66px] w-[375px]! h-[72px]!`}
                     onClick={() => setActiveTab(index)}
                   >
                     {service.title}

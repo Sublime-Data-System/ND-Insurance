@@ -102,10 +102,10 @@ export default function TestimonialsCarousel() {
       <div className="mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-block bg-[#F6FFDB] text-[#161616] px-5 py-2 rounded-[40.31px] text-[18px] font-[350] mb-4 border-[1.79px] border-[#A9BF6838]">
+          <div className="w-[96px] md:w-[136px] h-[32px] md:h-[43px] flex items-center justify-center mx-auto pt-1   bg-[#F6FFDB] text-[#161616]  rounded-[40.31px] text-[14px] md:text-[18px] font-[400] mb-4 border-[1.79px] border-[#A9BF6838]">
             Our Clients
           </div>
-          <h2 className="text-[40px] font-bold text-[#2C2C2C] mb-8">
+          <h2 className="text-[26px] md:text-[32px] lg:text-[40px] leading-[121%] font-bold text-[#2C2C2C] mb-8">
             Stories Of Security & Success
           </h2>
         </div>

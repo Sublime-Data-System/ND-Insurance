@@ -12,11 +12,10 @@ export default function Home() {
   return (
     <div className="bg-[#ffffff]">
       <Hero />
-      <GridLayout />
+      <WhyUs />
       <TestimonialsCarousel />
       <ServicesSection />
       <IndustriesSection />
-      <WhyUs />
       <div className="mt-20">
         <Products
           insuranceData={insuranceData.slice(0, 3)}

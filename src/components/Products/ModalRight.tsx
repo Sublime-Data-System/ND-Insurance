@@ -21,7 +21,7 @@ const ModalRight = ({
         {descList?.map((data, index) => (
           <li
             key={data + index}
-            className="text-[16px]! md:text-[18px]! text-[#7D7D7D] leading-[34px]! -tracking-[0.54px]!"
+            className="text-[16px]! md:text-[18px]! text-[#7D7D7D] leading-[34px]! -tracking-[0.54px]! whitespace-pre-line"
           >
             {data}
           </li>

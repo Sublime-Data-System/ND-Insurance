@@ -3,7 +3,7 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1225px;
   margin: 0 auto;
 }
 
@@ -208,21 +208,18 @@
 }
 
 .tabButton {
-  background-color: #bbf7d0;
+  background-color: #F6FFDB;
   color: #1f2937;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.75rem;
-  font-weight: 600;
-  font-size: 1rem;
+  padding: 0.75rem 50px;
+  border-radius: 62px;
+  font-weight: 400;
+  font-size: 20px;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.tabButton:hover {
-  background-color: #a7f3d0;
-  transform: translateY(-2px);
-}
+
 
 .navigation {
   display: flex;
@@ -234,7 +231,7 @@
 .navButton {
   width: 3rem;
   height: 3rem;
-  background-color: #bbf7d0;
+  background-color: #B6C38E;
   border: none;
   border-radius: 50%;
   display: flex;
@@ -284,7 +281,11 @@
 }
 
 /* Mobile Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
+
+  .container{
+    max-width: 600px;
+  }
   .desktopLayout {
     display: none;
   }
@@ -329,6 +330,13 @@
   .serviceText {
     font-size: 0.8rem;
   }
+}
+
+@media (max-width:740px) {
+  .tabButton{
+    font-size: 16px;
+  }
+  
 }
 
 @media (max-width: 480px) {
