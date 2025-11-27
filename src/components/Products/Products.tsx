@@ -17,6 +17,7 @@ type Product = {
   primaryDesc: string
   secondaryDesc: string
   descList: string[]
+  modalImage?: React.ReactNode
 }
 
 const Products = ({
