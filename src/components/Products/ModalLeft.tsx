@@ -1,15 +1,18 @@
 import Image from 'next/image'
 import React, { ReactNode } from 'react'
 import { Paragraph } from '../typography'
+import { cn } from '@/utility/cn'
 
 const ModalLeft = ({
   tags,
   title,
   image,
+  isPersonal,
 }: {
   tags: string[] | undefined
   title: string | undefined
   image: ReactNode | undefined
+  isPersonal: boolean | undefined
 }) => {
   return (
     <div className="w-full lg:w-[290px] md:h-fit lg:h-full">
@@ -24,7 +27,10 @@ const ModalLeft = ({
           return (
             <div
               key={data + index}
-              className="border-[#A9BF6838] border-[1.37px] bg-[#ECE8FF] h-[33px] rounded-[30px] text-[14px] w-fit px-2  flex items-center justify-center"
+              className={cn(
+                'border-[#A9BF6838] border-[1.37px] h-[33px] rounded-[30px] text-[14px] w-fit px-2  flex items-center justify-center',
+                isPersonal ? 'bg-[#DFEDB5]' : 'bg-[#ECE8FF]',
+              )}
             >
               {data}
             </div>

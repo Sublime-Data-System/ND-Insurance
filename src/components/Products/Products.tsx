@@ -85,6 +85,7 @@ const Products = ({
             <ModalLeft
               tags={selectedProduct?.tags}
               title={selectedProduct?.title}
+              isPersonal={!isCorporate}
               image={selectedProduct?.modalImage || selectedProduct?.image}
             />
             <ModalRight
@@ -94,7 +95,12 @@ const Products = ({
               descList={selectedProduct?.descList}
             />
             <DialogClose className="absolute top-4 right-4 lg:-top-1 lg:right-2">
-              <div className=" h-[50px] w-[50px] rounded-full bg-[#9A8BE6]  border-[2.7px] border-[#E0DAFF] flex items-center justify-center">
+              <div
+                className={cn(
+                  ' h-[50px] w-[50px] rounded-full  border-[2.7px] border-[#E0DAFF] flex items-center justify-center',
+                  !isCorporate ? 'bg-[#9FC03B]' : 'bg-[#9A8BE6]',
+                )}
+              >
                 <X color="#fff" />
               </div>
             </DialogClose>{' '}

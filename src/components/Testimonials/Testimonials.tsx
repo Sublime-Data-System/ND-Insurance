@@ -2,6 +2,7 @@ import React from 'react'
 import TestimonialCards from './TestimonialCards'
 import { H1Hero, H7, Paragraph } from '../typography'
 import Image from 'next/image'
+import { Navigation2, Navigation2Icon } from 'lucide-react'
 
 const Testimonials = () => {
   return (
@@ -21,20 +22,22 @@ const Testimonials = () => {
           <H7>Get in touch</H7>
         </button>
 
-        <Image
-          src="/images/user/user1.png"
-          alt="User1"
-          height={60}
-          width={58}
-          className="absolute top-28 sm:top-12 lg:top-8 left-4 sm:-left-0 lg:-left-40 max-sm:w-[40px] "
-        />
-        <Image
-          src="/images/user/user3.png"
-          alt="User2"
-          height={60}
-          width={58}
-          className="absolute top-28 sm:top-12 lg:top-9 right-4 sm:-right-0 lg:-right-40 max-sm:w-[40px]"
-        />
+        <div className="absolute top-28 sm:top-12 lg:top-8 left-4 sm:-left-0 lg:-left-40 max-sm:w-[40px] ">
+          <Image src="/images/user/user1.png" alt="User1" height={60} width={58} />
+          <Navigation2Icon
+            className="rotate-[135deg] relative -right-14 -top-2"
+            color="#C8D899"
+            fill="#C8D899"
+          />
+        </div>
+        <div className="absolute top-28 sm:top-12 lg:top-9 right-4 sm:-right-0 lg:-right-40 max-sm:w-[40px]">
+          <Image src="/images/user/user3.png" alt="User2" height={60} width={58} />
+          <Navigation2Icon
+            className="-rotate-[135deg] relative -left-5 -top-2"
+            color="#C8D899"
+            fill="#C8D899"
+          />
+        </div>
       </div>
       <TestimonialCards />
     </div>

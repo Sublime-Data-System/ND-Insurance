@@ -5,6 +5,8 @@ import { Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import styles from './TestimonialsCarousel.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
 
 interface Testimonial {
   id: number
@@ -20,47 +22,47 @@ const testimonials: Testimonial[] = [
   {
     id: 1,
     rating: 5,
-    text: 'We are truly pleased with the exceptional quality of services extended by the ND Insurance team from premium workings and policy placement to claim settlement',
-    company: 'KOSOL ENERGIE',
-    name: 'Ashish Shah',
-    companyName: 'Kosol Energie Pvt. Ltd',
-    logo: 'K',
+    text: 'The ND Insurance team made the insurance options easy to understand and helped us make well-informed decisions with confidence',
+    company: 'GTC Oilfield Services Ltd.',
+    name: 'Khushi Gupta ',
+    companyName: 'GTC Oilfield Services Ltd.',
+    logo: '/logo/gtc.png',
   },
   {
     id: 2,
     rating: 5,
-    text: '...pport of ND Insurance. They not only secure the best quotes from leading but also guided u',
-    company: 'K. Synthesis Ltd',
+    text: 'We truly appreciate the support of ND Insurance. They not only helped us compare and secure the best quotes from leading insurance companies but also guided us',
+    company: 'R. K. Synthesis Ltd',
     name: 'Nihar Patel',
-    companyName: 'K. Synthesis Ltd',
-    logo: 'R',
+    companyName: 'R. K. Synthesis Ltd',
+    logo: '/logo/rk.png',
   },
   {
     id: 3,
     rating: 5,
-    text: 'We appreciate ND Insurance Brokin underwriting, which has helped us secu effective coverage',
-    company: 'MM Yarns Pvt.',
-    name: 'Jaydip Pat',
-    companyName: 'MM Yarns Pvt.',
-    logo: 'MM',
+    text: 'We are truly pleased with the exceptional quality of services extended by the ND Insurance team from premium workings and policy placement to claim settlement',
+    company: 'Kosol Energie Pvt. Ltd',
+    name: 'Ashish Shah',
+    companyName: 'Kosol Energie Pvt. Ltd',
+    logo: '/logo/kosol.png',
   },
   {
     id: 4,
     rating: 5,
-    text: 'ND Insurance has been our trusted partner for years. Their expertise in risk management and claim processing is unmatched',
+    text: 'We appreciate ND Insurance Broking’s strategic approach to underwriting, which has helped us secure comprehensive and cost-effective coverage',
     company: 'TechCorp Ltd',
-    name: 'Sarah Johnson',
-    companyName: 'TechCorp Ltd',
-    logo: 'T',
+    name: 'Jaydip Patel',
+    companyName: 'M M Yarns Pvt. Ltd.',
+    logo: '/logo/mm.png',
   },
   {
     id: 5,
     rating: 5,
-    text: 'Outstanding service and support from the ND Insurance team. They made our insurance journey smooth and hassle-free',
-    company: 'Global Solutions',
-    name: 'Michael Chen',
-    companyName: 'Global Solutions Inc.',
-    logo: 'G',
+    text: 'We are truly pleased with the exceptional quality of services extended by the ND Insurance team from premium workings and policy placement to claim settlement',
+    company: 'Kosol Energie Pvt. Ltd',
+    name: 'Ashish Shah',
+    companyName: 'Kosol Energie Pvt. Ltd',
+    logo: '/logo/kosol.png',
   },
 ]
 
@@ -69,7 +71,7 @@ const StarRating = ({ rating }: { rating: number }) => (
     {[...Array(5)].map((_, i) => (
       <svg
         key={i}
-        className="w-5 h-5"
+        className="w-8 h-8"
         fill={i < rating ? '#FCD34D' : '#E5E7EB'}
         viewBox="0 0 20 20"
       >
@@ -80,20 +82,7 @@ const StarRating = ({ rating }: { rating: number }) => (
 )
 
 const CompanyLogo = ({ logo }: { logo: string }) => {
-  if (logo === 'K') {
-    return (
-      <div className="text-black font-bold text-xl mb-2 text-center">
-        <span className="text-2xl">K</span>
-        <div className="w-8 h-0.5 bg-black mb-1 mx-auto"></div>
-        ENERGIE
-      </div>
-    )
-  }
-  return (
-    <div className="w-12 h-12 bg-[#4D3E99] rounded-full flex items-center justify-center mb-2 mx-auto">
-      <span className="text-white font-bold text-lg">{logo}</span>
-    </div>
-  )
+  return <Image src={logo} alt={'logo'} height={84} width={84} className="mx-auto" />
 }
 
 export default function TestimonialsCarousel() {
@@ -147,11 +136,13 @@ export default function TestimonialsCarousel() {
               <SwiperSlide key={testimonial.id}>
                 <div className={`${styles.testimonialCard} bg-white`}>
                   <StarRating rating={testimonial.rating} />
-                  <p className="text-gray-700 text-sm md:text-base leading-relaxed text-center flex-grow">
+                  <p className="text-gray-700 text-sm md:text-[18px] leading-relaxed text-center flex-grow max-w-[563px] mx-auto">
                     {testimonial.text.split('... Read more')[0]}
-                    <span className="text-[#4D3E99] cursor-pointer hover:underline">
-                      ... Read more
-                    </span>
+                    <Link href={'/testimonials'}>
+                      <span className="text-[#4D3E99] cursor-pointer hover:underline">
+                        ... Read more
+                      </span>
+                    </Link>
                   </p>
                   <div className="mt-auto mb-4">
                     <CompanyLogo logo={testimonial.logo} />

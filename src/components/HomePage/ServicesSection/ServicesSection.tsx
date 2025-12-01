@@ -112,8 +112,12 @@ export default function ServicesSection() {
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
-          <div className={styles.badge}>Our services</div>
-          <h2 className={styles.title}>Get Secure With Our Services</h2>
+          <div className="text-[14px] md:text-[18px] w-[110px] sm:w-[151px] h-[32px] sm:h-[43px] pt-1 mx-auto border-[1.8px] border-[#A9BF6838] flex justify-center items-center bg-[#F6FFDB] rounded-[40px]">
+            Our Services
+          </div>
+          <h3 className="text-[26px] md:text-[32px] lg:text-[40px] font-bold leading-[121%] -tracking-[1.2px] text-center my-5 mb-10">
+            Get To Know Us
+          </h3>
         </div>
 
         {/* Main Content Container */}

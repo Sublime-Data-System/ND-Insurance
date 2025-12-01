@@ -1,3 +1,4 @@
+import AboutUs from '@/components/HomePage/AboutUs/AboutUs'
 import Hero from '@/components/HomePage/HeroSection/Hero'
 import IndustriesSection from '@/components/HomePage/IndustriesSection/IndustriesSection'
 import InsuranceBanner from '@/components/HomePage/InsuranceBanner/InsuranceBanner'
@@ -10,8 +11,9 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <Hero />
+      <AboutUs />
       <WhyUs />
       <TestimonialsCarousel />
       <ServicesSection />

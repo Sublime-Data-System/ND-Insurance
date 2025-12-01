@@ -1,20 +1,12 @@
 import React from 'react'
 
-const IconWrapper = ({
-  icon,
-  className = 'w-6 h-6',
-  children,
-}: {
-  icon: string
-  className: string
-  children?: React.ReactNode
-}) => {
+const IconWrapper = ({ icon, className = 'w-6 h-6' }: { icon: string; className: string }) => {
   let SvgIcon
   switch (icon) {
     case 'PhoneCall':
-      SvgIcon = (props) => (
+      SvgIcon = ({ className }: { className: string }) => (
         <svg
-          {...props}
+          className={className}
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -30,9 +22,9 @@ const IconWrapper = ({
       )
       break
     case 'Mail':
-      SvgIcon = (props) => (
+      SvgIcon = ({ className }: { className: string }) => (
         <svg
-          {...props}
+          className={className}
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -50,8 +42,9 @@ const IconWrapper = ({
       break
     case 'MapPin':
     default:
-      SvgIcon = (props) => (
+      SvgIcon = ({ className }: { className: string }) => (
         <svg
+          className={className}
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -86,9 +79,6 @@ const ContactCard = ({
   buttonUrl: string | null
   isLink?: boolean
 }) => {
-  const iconColor = 'text-indigo-600'
-  const iconBg = 'bg-indigo-100'
-
   return (
     <div
       style={{ boxShadow: '0px 4.25px 43.24px 5.31px #00000008' }}

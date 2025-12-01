@@ -38,7 +38,14 @@ const VisitUs = () => {
           alt={'Location of ND Insurance'}
         />
       </div>
-      <div className="h-[292px] md:h-[362px]  w-[262px]  rounded-[18px] bg-black"></div>
+      <div className="h-[292px] md:h-[362px]  w-[262px]  rounded-[18px] ">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29376.3678423102!2d72.50274287431634!3d23.02208390000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8548dae3c513%3A0x6b6ebc8dddcff73b!2sND%20Insurance%20Broking%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1764233975454!5m2!1sen!2sin"
+          className="h-[292px] md:h-[362px]  w-[262px] rounded-[18px]"
+          style={{ border: '0' }}
+          loading="lazy"
+        ></iframe>
+      </div>
     </div>
   )
 }

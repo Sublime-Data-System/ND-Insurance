@@ -45,14 +45,15 @@ const InsuranceBanner = () => {
                 <span className="text-[#4D3E99]">Real Coverage.</span>
               </i>
             </H5>
-
-            <button
-              className={
-                'w-[142px] md:w-[177px] h-[56px] md:h-[65px] rounded-[45px] bg-[#2D2D2D] mt-[20px] hover:bg-[#4D3E99]'
-              }
-            >
-              <H7 className="text-white">Get a Quote</H7>
-            </button>
+            <Link href={'/contact-us'}>
+              <button
+                className={
+                  'w-[142px] md:w-[177px] h-[56px] md:h-[65px] rounded-[45px] bg-[#2D2D2D] mt-[20px] hover:bg-[#4D3E99]'
+                }
+              >
+                <H7 className="text-white">Get a Quote</H7>
+              </button>
+            </Link>
           </div>
 
           <Image

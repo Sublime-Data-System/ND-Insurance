@@ -3,6 +3,7 @@ import { Paragraph } from '../typography'
 import Image from 'next/image'
 import FooterBase from './FooterBase'
 import FooterRight from './FooterRight'
+import Link from 'next/link'
 
 const Footer = () => {
   const contacts = [
@@ -34,11 +35,13 @@ const Footer = () => {
             <i>Protecting Your Growth, Securing Your Future !</i>
           </Paragraph>
 
-          <button className="w-[177px] h-[56px] sm:h-[65px] bg-[#2D2D2D] rounded-[45px] mt-[30px] hover:bg-[#4D3E99]">
-            <Paragraph className="text-[18px] sm:text-[21px] font-[350] text-white">
-              Get a Quote
-            </Paragraph>
-          </button>
+          <Link href={'/contact-us'}>
+            <button className="w-[177px] h-[56px] sm:h-[65px] bg-[#2D2D2D] rounded-[45px] mt-[30px] hover:bg-[#4D3E99]">
+              <Paragraph className="text-[18px] sm:text-[21px] font-[350] text-white">
+                Get a Quote
+              </Paragraph>
+            </button>
+          </Link>
         </div>
         <div className=" flex flex-col gap-[30px] w-[286px] max-md:pt-[50px] max-md:hidden lg:hidden mt-14">
           <Paragraph className="text-[18px] text-black font-[400] mb-[10px]">

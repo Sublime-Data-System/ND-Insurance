@@ -75,10 +75,11 @@ const Navbar = () => {
                 </Link>
               )
             })}
-
-            <button className="h-[65px] w-[220px] rounded-[45px] bg-[#2F2F2F] mt-[50px]">
-              <H7 className="text-[#fff] ">Get a Quote</H7>
-            </button>
+            <Link href={'/contact-us'}>
+              <button className="h-[65px] w-[220px] rounded-[45px] bg-[#2F2F2F] mt-[50px]">
+                <H7 className="text-[#fff] ">Get a Quote</H7>
+              </button>
+            </Link>
           </div>
         )}
       </div>
@@ -104,16 +105,18 @@ const Navbar = () => {
                 </Paragraph>
               </Link>
             ))}
-            <button className="h-[50px] w-[50px] xl:h-[59px] xl:w-[164px] hover:bg-[#4D3E99] rounded-[45px] bg-[#2F2F2F] flex items-center justify-center">
-              <H7 className="text-white max-xl:hidden">Get a Quote</H7>
-              <Image
-                className="max-lg:hidden xl:hidden"
-                alt={'logo'}
-                src={'/svg/buttonArrow.svg'}
-                height={30}
-                width={30}
-              />
-            </button>
+            <Link href={'/contact-us'}>
+              <button className="h-[50px] w-[50px] xl:h-[59px] xl:w-[164px] hover:bg-[#4D3E99] rounded-[45px] bg-[#2F2F2F] flex items-center justify-center">
+                <H7 className="text-white max-xl:hidden">Get a Quote</H7>
+                <Image
+                  className="max-lg:hidden xl:hidden"
+                  alt={'logo'}
+                  src={'/svg/buttonArrow.svg'}
+                  height={30}
+                  width={30}
+                />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { H2, H5, H7, Paragraph } from '../typography'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const ServiceBanner = () => {
   return (
@@ -61,10 +62,11 @@ const ServiceBanner = () => {
                 </svg>
               </div>
             </div>
-
-            <button className="h-[54px] sm:h-[65px] w-full rounded-[44.6px] bg-[#2F2F2F] hover:bg-[#4D3E99]">
-              <H7 className="text-white text-[17.5px] sm:text-[21px]">Get a Quote</H7>
-            </button>
+            <Link href={'/contact-us'}>
+              <button className="h-[54px] sm:h-[65px] w-full rounded-[44.6px] bg-[#2F2F2F] hover:bg-[#4D3E99]">
+                <H7 className="text-white text-[17.5px] sm:text-[21px]">Get a Quote</H7>
+              </button>
+            </Link>
           </div>
           <div className="h-[44px] w-[180px] text-[14px] rounded-l-[22px] bg-[#E4F8AA] absolute pl-8 flex items-center -top-[70px] sm:top-[40px] -right-[28px] sm:-left-40 z-10 sm:z-0">
             Right coverage
