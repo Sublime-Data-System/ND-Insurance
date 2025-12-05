@@ -13,13 +13,14 @@ const WhyUsRightCard = () => {
           src={'/logo/navLogo.png'}
           className="h-[41px] mx-auto"
         />
+
         <p className="text-[16px] w-[237px] text-[#090A0A] text-center mx-auto">
           <i>
             Find the <span className="text-[#4D3E99]">Right Insurance</span> — with the{' '}
             <span className="text-[#4D3E99]">Best Advisors.</span>
           </i>
         </p>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center ml-5">
           <Image
             src={'/images/about-us/parth-desai-sm.png'}
             alt={''}

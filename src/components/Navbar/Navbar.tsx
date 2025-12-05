@@ -46,7 +46,7 @@ const Navbar = () => {
         )}
       >
         <div className="h-[66px] flex items-center justify-between ">
-          <Image alt={'logo'} src={'/logo/navLogo.png'} height={46} width={104} />
+          <Image alt={'logo'} src={'/logo/navLogo.png'} height={56} width={124} />
           {menuVisible ? (
             <X
               onClick={() =>

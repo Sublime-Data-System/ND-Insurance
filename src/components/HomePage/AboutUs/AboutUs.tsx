@@ -24,7 +24,9 @@ const AboutUs = () => {
           <h2 className="font-bold text-[32px] text-[#6F8925] leading-[121%] px-8 pt-4 sm:pt-8">
             20+
           </h2>
-          <p className="text-[#6F8925AD] text-[32px] leading-[121%]  px-8">Industries</p>
+          <p className="text-[#6F8925AD] text-[32px] leading-[121%] -tracking-[0.78px]  px-8">
+            Industries
+          </p>
           <div className="w-full flex justify-center">
             <div className="w-[294px] sm:w-[321px] h-[268px] sm:h-[285px] bg-white rounded-t-[13px] relative top-3 sm:top-5 px-5 ">
               <Minus className="mx-auto" strokeWidth={4} size={41} fill="#CDCFD0" color="#CDCFD0" />
@@ -43,7 +45,7 @@ const AboutUs = () => {
         </div>
         <div className="w-[331px] sm:w-[405px] h-[373px] sm:h-[383px] rounded-[41px] bg-[#F3F3F3] flex justify-center">
           <div className="w-[293px] sm:w-[339px] h-[213px] sm:h-[277px] bg-white rounded-b-[24px] rounded-bl-[24px] relative pt-6">
-            <p className="w-[264px] sm:w-[305px] text-[#2A2A2A] text-center mx-auto text-[18px]">
+            <p className="w-[264px] sm:w-[305px] text-[#2A2A2A] -tracking-[0.72px] text-center mx-auto text-[18px]">
               We provide <span className="text-[#4D3E99]">expert insurance</span> &{' '}
               <span className="text-[#4D3E99]">risk management services</span> for{' '}
               <span className="text-[#4D3E99]">B2C</span> and{' '}
@@ -78,7 +80,7 @@ const AboutUs = () => {
         </div>
         <div className="w-[331px] sm:w-[405px] h-[373px] sm:h-[383px] rounded-[41px] bg-[#4D3E99] relative">
           <h2 className="font-bold text-[32px] text-[#fff] leading-[121%] px-8 pt-8">5000+</h2>
-          <p className="text-[#FFFFFFAD] text-[26px] sm:text-[32px] leading-[121%]  pl-8">
+          <p className="text-[#FFFFFFAD] text-[26px] sm:text-[32px] leading-[121%] -tracking-[0.78px]  pl-8">
             Individual Customers
           </p>
           <div className="w-[287px] sm:w-[339px] h-[234px] sm:h-[284px] bg-white rounded-t-[20px] absolute bottom-0 sm:-bottom-10 left-6 sm:left-8 py-8">

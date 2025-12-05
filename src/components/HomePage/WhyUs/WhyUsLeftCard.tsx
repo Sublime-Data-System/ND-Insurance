@@ -3,10 +3,10 @@ import React, { ReactElement } from 'react'
 function LeftElement({ text, svg }: { text: ReactElement; svg: ReactElement }) {
   return (
     <div className="flex items-center gap-5 lg:gap-7">
-      <div className="w-[52px] h-[45px] bg-[#ECE8FF] rounded-[11px] flex items-center justify-center">
+      <div className="w-[52px] h-[45px] bg-[#ECE8FF] rounded-[11px] flex items-center justify-center border-[#0000002B] border-[0.63px]">
         {svg}
       </div>
-      <p className=" text-[18px] lg:text-[22px] leading-[121%] -leading-[0.66px] w-[189px] lg:w-[302px]">
+      <p className=" text-[18px] lg:text-[22px] leading-[121%] -tracking-[0.66px] w-[189px] lg:w-[302px]">
         {text}
       </p>
     </div>
