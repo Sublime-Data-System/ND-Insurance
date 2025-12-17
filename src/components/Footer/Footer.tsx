@@ -25,7 +25,7 @@ const Footer = () => {
       <div className="flex flex-wrap flex-1 pb-[50px] justify-between">
         <div className="w-[250px] md:w-[300px]">
           <Image
-            src={'/logo/footerLogo.png'}
+            src={'/logo/FooterLogo.png'}
             className="h-[114px] sm:h-[147px] w-[179px] sm:w-[221px]"
             height={147}
             width={221}
