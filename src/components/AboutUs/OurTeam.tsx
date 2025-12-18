@@ -40,7 +40,7 @@ const OurTeam = () => {
       linkedin: 'https://www.linkedin.com/in/bijaltrivedi ', // add link
     },
     {
-      name: 'Naiyra Ashra',
+      name: 'Naiya Ashra',
       role: 'Manager, Accounts',
       image: '/images/about-us/naiyra-ashra.png', // replace with actual path
       imageSm: '/images/about-us/naiyra-ashra-sm.png',
