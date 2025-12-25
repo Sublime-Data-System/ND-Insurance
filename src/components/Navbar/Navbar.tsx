@@ -94,7 +94,7 @@ const Navbar = () => {
         >
           <div className="h-full w-auto flex items-center pl-[20px]">
             <Link href={'/'}>
-              <Image alt={'logo'} src={'/logo/navLogo.png'} height={57} width={128} />
+              <Image alt={'logo'} src={'/logo/navLogo.png'} height={68} width={152} />
             </Link>
           </div>
           <div className="h-full w-auto flex items-center gap-[30px] pr-[16px]">
