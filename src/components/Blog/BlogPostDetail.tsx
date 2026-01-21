@@ -65,17 +65,33 @@ const BlogPostDetail: React.FC<BlogPostDetailProps> = ({ post }) => {
   }
 
   return (
-    <article className="w-full py-12 px-4 md:px-10 max-w-[1336px] mx-auto">
-      <Link href="/blogs" className="text-[#41357B] hover:text-[#2F2F2F] mb-6 inline-block">
-        ← Back to Blog
-      </Link>
+    <article className="w-full py-8 md:py-12 px-4 md:px-10 max-w-[1200px] mx-auto">
+      {/* Back Button - Large and Center Aligned */}
+      <div className="mb-8 md:mb-10">
+        <Link
+          href="/blogs"
+          className="group inline-flex items-center gap-3 text-[#41357B] hover:text-[#2F2F2F] transition-colors duration-200"
+        >
+          <svg
+            className="w-6 h-6 transform group-hover:-translate-x-1 transition-transform duration-200"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            strokeWidth={2.5}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+          <span className="text-lg md:text-xl font-semibold">Back to Blog</span>
+        </Link>
+      </div>
 
+      {/* Categories */}
       {post.categories && post.categories.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2 mb-6">
           {post.categories.map((category, index) => (
             <span
               key={index}
-              className="px-3 py-1 bg-[#ECE8FF] text-[#41357B] text-sm rounded-full border border-[#A9BF6838]"
+              className="px-4 py-1.5 bg-[#ECE8FF] text-[#41357B] text-sm font-medium rounded-full border border-[#A9BF6838]"
             >
               {typeof category === 'string' ? category : category}
             </span>
@@ -83,17 +99,22 @@ const BlogPostDetail: React.FC<BlogPostDetailProps> = ({ post }) => {
         </div>
       )}
 
+      {/* Title */}
       <H1Grey className="mb-6 text-left">{post.title}</H1Grey>
 
-      {post.excerpt && <H2 className="text-[#858585] mb-8 text-left italic">{post.excerpt}</H2>}
+      {/* Excerpt */}
+      {post.excerpt && (
+        <H2 className="text-[#858585] mb-8 text-left italic leading-relaxed">{post.excerpt}</H2>
+      )}
 
-      <div className="flex items-center gap-4 mb-8 pb-6 border-b border-gray-200">
+      {/* Author and Date */}
+      <div className="flex items-center gap-4 mb-10 pb-8 border-b border-gray-200">
         {post.author && (
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             {post.author.image && (
-              <div className="relative w-12 h-12 rounded-full overflow-hidden">
+              <div className="relative w-14 h-14 rounded-full overflow-hidden ring-2 ring-gray-100 flex-shrink-0">
                 <Image
-                  src={urlFor(post.author.image).width(48).height(48).url()}
+                  src={urlFor(post.author.image).width(56).height(56).url()}
                   alt={post.author.name}
                   fill
                   className="object-cover"
@@ -101,7 +122,9 @@ const BlogPostDetail: React.FC<BlogPostDetailProps> = ({ post }) => {
               </div>
             )}
             <div>
-              <Paragraph className="font-semibold mb-0">{post.author.name}</Paragraph>
+              <Paragraph className="font-semibold mb-1 text-[#2F2F2F]">
+                {post.author.name}
+              </Paragraph>
               {post.publishedAt && (
                 <time dateTime={post.publishedAt} className="text-sm text-[#858585]">
                   {new Date(post.publishedAt).toLocaleDateString('en-US', {
@@ -116,21 +139,23 @@ const BlogPostDetail: React.FC<BlogPostDetailProps> = ({ post }) => {
         )}
       </div>
 
+      {/* Featured Image */}
       {imageUrl && (
-        <div className="relative w-full h-96 mb-8 rounded-lg overflow-hidden">
+        <div className="relative w-full h-[400px] md:h-[500px] mb-10 rounded-xl overflow-hidden shadow-lg">
           <Image
             src={imageUrl}
             alt={post.title}
             fill
             className="object-cover"
             priority
-            sizes="(max-width: 768px) 100vw, 800px"
+            sizes="(max-width: 768px) 100vw, 900px"
           />
         </div>
       )}
 
+      {/* Content */}
       {post.body && (
-        <div className="prose prose-lg max-w-none">
+        <div className="prose prose-lg max-w-none prose-headings:mt-8 prose-headings:mb-4 prose-p:mb-6 prose-p:leading-relaxed prose-img:rounded-lg prose-img:shadow-md prose-a:text-[#41357B] prose-a:no-underline hover:prose-a:underline">
           <PortableText value={post.body} components={components} />
         </div>
       )}
