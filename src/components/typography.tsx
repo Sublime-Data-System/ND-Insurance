@@ -17,10 +17,7 @@ export const H1Hero = ({ children, className }: { children: ReactNode; className
 export const H1Grey = ({ children, className }: { children: ReactNode; className?: string }) => {
   return (
     <h1
-      className={cn(
-        'text-[60px] leading-[121%] -tracking-[1.8px] font-[700] text-center',
-        className,
-      )}
+      className={cn('text-5xl leading-[121%] -tracking-[1.8px] font-[700] text-center', className)}
     >
       {children}
     </h1>
@@ -29,12 +26,7 @@ export const H1Grey = ({ children, className }: { children: ReactNode; className
 
 export const H2 = ({ children, className }: { children: ReactNode; className?: string }) => {
   return (
-    <h2
-      className={cn(
-        'text-[26px] md:text-[40px]  leading-[144%] -tracking-[1.2px] font-[400]',
-        className,
-      )}
-    >
+    <h2 className={cn('text-4xl leading-[144%] -tracking-[1.2px] font-[400]', className)}>
       {children}
     </h2>
   )
