@@ -65,9 +65,9 @@ const BlogPostDetail: React.FC<BlogPostDetailProps> = ({ post }) => {
   }
 
   return (
-    <article className="w-full py-8 md:py-12 px-4 md:px-10 max-w-[1200px] mx-auto">
+    <article className="w-full py-8 md:py-12 px-4 md:px-10 max-w-[1336px] mx-auto">
       {/* Back Button - Large and Center Aligned */}
-      <div className="mb-8 md:mb-10">
+      <div className="mb-6">
         <Link
           href="/blogs"
           className="group inline-flex items-center gap-3 text-[#41357B] hover:text-[#2F2F2F] transition-colors duration-200"
@@ -100,11 +100,27 @@ const BlogPostDetail: React.FC<BlogPostDetailProps> = ({ post }) => {
       )}
 
       {/* Title */}
-      <H1Grey className="mb-6 text-left">{post.title}</H1Grey>
+      <H1Grey className="mb-6 text-left text-2xl">{post.title}</H1Grey>
+
+      {/* Featured Image */}
+      {imageUrl && (
+        <div className="relative w-full h-[400px] md:h-[500px] mb-8 rounded-xl overflow-hidden shadow-lg">
+          <Image
+            src={imageUrl}
+            alt={post.title}
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 768px) 100vw, 900px"
+          />
+        </div>
+      )}
 
       {/* Excerpt */}
       {post.excerpt && (
-        <H2 className="text-[#858585] mb-8 text-left italic leading-relaxed">{post.excerpt}</H2>
+        <H2 className="text-[#858585] mb-8 text-left italic text-xl leading-relaxed">
+          {post.excerpt}
+        </H2>
       )}
 
       {/* Author and Date */}
@@ -138,20 +154,6 @@ const BlogPostDetail: React.FC<BlogPostDetailProps> = ({ post }) => {
           </div>
         )}
       </div>
-
-      {/* Featured Image */}
-      {imageUrl && (
-        <div className="relative w-full h-[400px] md:h-[500px] mb-10 rounded-xl overflow-hidden shadow-lg">
-          <Image
-            src={imageUrl}
-            alt={post.title}
-            fill
-            className="object-cover"
-            priority
-            sizes="(max-width: 768px) 100vw, 900px"
-          />
-        </div>
-      )}
 
       {/* Content */}
       {post.body && (

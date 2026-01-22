@@ -14,7 +14,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
 
   return (
     <Link href={`/blogs/${post.slug.current}`}>
-      <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer h-full flex flex-col">
+      <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer h-full flex flex-col">
         {imageUrl && (
           <div className="relative w-full h-64">
             <Image
