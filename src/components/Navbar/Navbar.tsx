@@ -29,6 +29,7 @@ const Navbar = () => {
     { text: 'About us', link: '/about-us' },
     { text: 'Our Services', link: '/our-services' },
     { text: 'Our Products', link: '/our-products' },
+    { text: 'Blog', link: '/blogs' },
     { text: 'Testimonials', link: '/testimonials' },
     { text: 'Contact us', link: '/contact-us' },
   ]
